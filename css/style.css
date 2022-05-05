@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5EEDC;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: maroon;
+    
+}
+
+#navbar-icon{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-right: 10px;
+    display: none;
+}
+
+nav{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    padding: 5px;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    padding: 10px;
+}
+
+nav .nav-link{
+    width: 51%;
+
+}
+
+nav .btn-navbar{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-left: 10px;
+    padding: 10px;
+    color: white;
+    
+}
+
+nav .nav-title{
+    justify-content: flex-start;
+    font-family: 'EB Garamond', serif;
+    font-size: 28px;
+    
+}
+
+nav .btn-navbar:hover{
+    color: maroon;
+    background-color: #dfdfdf;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+header figure{
+    margin: 0%;
+    width: 100%;
+    margin: auto;
+    
+}
+
+header figure img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    
+}
+
+main .opening{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.opening h1{
+    font-size: 40px;
+    margin: 0;
+    padding: 10px;
+}
+
+main .contents{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+main article{
+    width: 33%;
+    justify-content: center;
+    margin: 20px 25px 20px 25px;
+}
+
+main article figure,h3{
+    margin: 15px auto;
+    text-align: center;
+    position: relative;
+}
+
+.contents figure img{
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+}
+
+footer{
+    background-color: #830000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contents span{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.3s;
+    color: white;
+    overflow: auto;
+}
+
+.contents span h4{
+    text-align: center;
+    padding: 10px;
+}
+
+.contents span p{
+    text-align: justify;
+    padding: 5px 10px 5px 10px;
+    text-indent: 10px;
+    margin: 0;
+}
+
+.contents figure:hover span{
+    background-color: black;
+    opacity: 0.75;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav .nav-title{
+        display: flex;
+        flex-direction: row;
+        font-size: 28px;
+        padding: 5px;
+        
+    }
+
+    nav ul{
+        width: 100%;    
+    }
+
+    nav .nav-link{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #navbar-icon{
+        display: block;
+    }
+
+    main .contents{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main article{
+        width: 60%;
+    }
+
+    .nav-closed{
+        display: none!important;
+    }
+}
+
