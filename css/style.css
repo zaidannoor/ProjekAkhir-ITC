@@ -39,6 +39,7 @@ nav ul{
     justify-content: space-evenly;
     width: 30%;
     padding: 10px;
+    align-items: center;
 }
 
 nav .nav-link{
@@ -90,7 +91,7 @@ main .opening{
 }
 
 .opening h1{
-    font-size: 40px;
+    font-size: 48px;
     margin: 0;
     padding: 10px;
 }
@@ -98,6 +99,7 @@ main .opening{
 main .contents{
     width: 85%;
     margin: auto;
+    margin-bottom: 15px;
     display: flex;
     justify-content: center;
 }
@@ -158,6 +160,55 @@ footer{
     opacity: 0.75;
 }
 
+main .schedule{
+    width: 89%;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+main .schedule h3{
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-indent: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+
+main .schedule div{
+    display: none;
+    border: 1px solid rgba(171, 171, 171, 0.7);
+    transform: 0.3s;
+}
+
+main .schedule div p{
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+main .schedule div span{
+    margin: 20px;
+}
+
+main .schedule div span p{
+    display: inline-block;
+    border: 1px solid brown;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px;
+    text-align: center;
+}
+
+.schedule-show{
+    display: block!important;
+}
+
+.shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 @media only screen and (max-width: 768px) {
     nav {
         display: flex;
@@ -196,6 +247,17 @@ footer{
 
     .nav-closed{
         display: none!important;
+    }
+
+    main .schedule div span{
+        margin: 10px;
+    }
+
+    main .schedule div p{
+        font-weight: normal;
+        font-size: 14px;
+        margin-left: 20px;
+        display: block;
     }
 }
 
